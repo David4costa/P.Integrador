@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dragon Volume | Entrenamiento Saiyan</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Three.js: permite crear las figuras 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+
+    <!-- =====================================================
+         EFECTOS DEL FONDO
+         Estos elementos se utilizan para crear efectos
+         visuales interactivos sobre la página.
+    ====================================================== -->
+
+    <div class="mouse-light"></div>
+    <div class="particles"></div>
+
+    <!-- =====================================================
+         NAVBAR
+         Barra de navegación principal del proyecto.
+    ====================================================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-orb"></span>
+            DRAGON <b>VOLUME</b>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#figuras">Figuras</a></li>
+            <li><a href="#calculadora">Calculadora</a></li>
+            <li><a href="#entrenamiento">Entrenamiento</a></li>
+            <li><a href="#opiniones">Opiniones</a></li>
+        </ul>
+
+        <div class="power-bar">
+            <span>PODER</span>
+            <div><i></i></div>
+        </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+         HERO
+         Es la portada principal de Dragon Volume.
+    ====================================================== -->
+
+    <header class="hero" id="inicio">
+
+        <div class="hero-rays"></div>
+
+        <!-- GOKU -->
+        <div class="character goku-box">
+
+            <div class="aura aura-orange"></div>
+
+            <!-- Imagen original de Goku. NO MODIFICADA -->
+            <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F25%2F76%2Ff3%2F2576f3dfb71ae3dd1c6a5cda8e8a7ae7.png&f=1&nofb=1&ipt=10ec105d0c26cd4fbc44f87c76b8b7ef9ed4b4e1b370ee4180548ef102d852a"
+                alt="Goku"
+            >
+
+        </div>
+
+
+        <!-- CONTENIDO CENTRAL -->
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                ⚡ AUMENTA TU PODER MATEMÁTICO ⚡
+            </div>
+
+            <h1>
+                CALCULA
+                <span>VOLÚMENES</span>
+            </h1>
+
+            <p class="hero-title-small">
+                COMO UN VERDADERO SAIYAN
+            </p>
+
+            <p class="hero-description">
+
+                Domina las fórmulas, entrena tu mente y calcula
+                el volumen de las principales figuras geométricas.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#calculadora" class="main-button">
+                    Comenzar entrenamiento ⚡
+                </a>
+
+                <a href="#figuras" class="secondary-button">
+                    Ver figuras 3D
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+                    <strong>04</strong>
+                    <span>FIGURAS</span>
+                </div>
+
+                <div>
+                    <strong>3D</strong>
+                    <span>INTERACTIVO</span>
+                </div>
+
+                <div>
+                    <strong>∞</strong>
+                    <span>CÁLCULOS</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- VEGETA -->
+
+        <div class="character vegeta-box">
+
+            <div class="aura aura-blue"></div>
+
+            <!-- Imagen original de Vegeta. NO MODIFICADA -->
+            <img
+                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngmart.com%2Ffiles%2F2%2FVegeta-PNG-Image.png&f=1&nofb=1&ipt=579a1c2bb38b7b92c8d4c936ec399b06cde404bf66e3070397b43702bedd08a5"
+                alt="Vegeta"
+            >
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         ESFERAS
+         Decoración inspirada en las siete Dragon Balls.
+    ====================================================== -->
+
+    <div class="dragon-balls">
+
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+        <span>★</span>
+
+    </div>
+
+
+    <!-- =====================================================
+         INTRODUCCIÓN
+         Esta sección fue mejorada visualmente con energía,
+         partículas y tarjetas interactivas.
+    ====================================================== -->
+
+    <section class="intro">
+
+        <!-- Decoraciones de energía -->
+        <div class="energy-orb intro-orb-one"></div>
+        <div class="energy-orb intro-orb-two"></div>
+
+        <div class="intro-content">
+
+            <span class="section-tag">DRAGON VOLUME</span>
+
+            <h2>
+                EL PODER ESTÁ EN
+                <span>LAS MATEMÁTICAS</span>
+            </h2>
+
+            <p>
+                No necesitas ser un genio para dominar el volumen.
+                Solo necesitas conocer la figura, introducir sus
+                medidas y dejar que Dragon Volume haga el resto.
+            </p>
+
+            <!-- Indicador visual adicional -->
+            <div class="power-message">
+                <span class="power-icon">⚡</span>
+
+                <div>
+                    <strong>ENTRENA TU MENTE</strong>
+                    <small>Cada fórmula aumenta tu poder.</small>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="intro-cards">
+
+            <article class="power-card">
+                <div class="card-glow"></div>
+
+                <strong>01</strong>
+
+                <div class="card-icon">🎯</div>
+
+                <h3>Elige</h3>
+
+                <p>
+                    Selecciona una figura geométrica
+                    para comenzar tu entrenamiento.
+                </p>
+
+                <span class="card-energy">+ KI</span>
+            </article>
+
+
+            <article class="power-card">
+                <div class="card-glow"></div>
+
+                <strong>02</strong>
+
+                <div class="card-icon">⚡</div>
+
+                <h3>Calcula</h3>
+
+                <p>
+                    Introduce sus medidas y aplica
+                    correctamente la fórmula.
+                </p>
+
+                <span class="card-energy">+ PODER</span>
+            </article>
+
+
+            <article class="power-card">
+                <div class="card-glow"></div>
+
+                <strong>03</strong>
+
+                <div class="card-icon">🔥</div>
+
+                <h3>Domina</h3>
+
+                <p>
+                    Obtén el resultado y continúa
+                    aumentando tu nivel matemático.
+                </p>
+
+                <span class="card-energy">+ NIVEL</span>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FIGURAS 3D
+         IMPORTANTE:
+         Las figuras, sus tamaños, geometrías y rotaciones
+         NO fueron modificadas.
+         Solo se mejoró el fondo visual de esta sección.
+    ====================================================== -->
+
+    <section class="features" id="figuras">
+
+        <!-- Decoraciones del escenario -->
+        <div class="section-energy energy-one"></div>
+        <div class="section-energy energy-two"></div>
+        <div class="energy-grid"></div>
+
+        <div class="section-title figure-title">
+
+            <span>⚡ ENTRENAMIENTO VISUAL ⚡</span>
+
+            <h2>
+                DOMINA LAS FIGURAS <b>3D</b>
+            </h2>
+
+            <p>
+                Arrastra cada figura para explorarla.
+                También puedes dejarla girando automáticamente.
+            </p>
+
+            <div class="training-status">
+                <i></i>
+                SISTEMA 3D ACTIVO
+            </div>
+
+        </div>
+
+
+        <div class="figure-grid">
+
+
+            <!-- CUBO -->
+
+            <article class="figure-card">
+
+                <div class="figure-header">
+
+                    <div>
+                        <span>01</span>
+                        <h3>Cubo</h3>
+                    </div>
+
+                    <b>lado³</b>
+
+                </div>
+
+                <!-- Canvas 3D original -->
+                <div class="canvas-container" id="cube3d"></div>
+
+                <p>
+                    Todos sus lados tienen la misma longitud.
+                </p>
+
+                <div class="formula">
+                    V = lado³
+                </div>
+
+            </article>
+
+
+            <!-- PIRÁMIDE -->
+
+            <article class="figure-card">
+
+                <div class="figure-header">
+
+                    <div>
+                        <span>02</span>
+                        <h3>Pirámide</h3>
+                    </div>
+
+                    <b>B × h / 3</b>
+
+                </div>
+
+                <div class="canvas-container" id="pyramid3d"></div>
+
+                <p>
+                    Su volumen depende del área de la base
+                    y de la altura.
+                </p>
+
+                <div class="formula">
+                    V = (B × h) / 3
+                </div>
+
+            </article>
+
+
+            <!-- ESFERA -->
+
+            <article class="figure-card">
+
+                <div class="figure-header">
+
+                    <div>
+                        <span>03</span>
+                        <h3>Esfera</h3>
+                    </div>
+
+                    <b>4πr³ / 3</b>
+
+                </div>
+
+                <div class="canvas-container" id="sphere3d"></div>
+
+                <p>
+                    Todos los puntos de su superficie
+                    están a la misma distancia del centro.
+                </p>
+
+                <div class="formula">
+                    V = 4/3 × π × r³
+                </div>
+
+            </article>
+
+
+            <!-- CONO -->
+
+            <article class="figure-card">
+
+                <div class="figure-header">
+
+                    <div>
+                        <span>04</span>
+                        <h3>Cono</h3>
+                    </div>
+
+                    <b>πr²h / 3</b>
+
+                </div>
+
+                <div class="canvas-container" id="cone3d"></div>
+
+                <p>
+                    Tiene una base circular y un vértice.
+                </p>
+
+                <div class="formula">
+                    V = π × r² × h / 3
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CALCULADORA
+         ESTA PARTE SE MANTIENE IGUAL.
+    ====================================================== -->
+
+    <section class="calculator" id="calculadora">
+
+        <div class="calculator-heading">
+
+            <span>⚡ SALA DE ENTRENAMIENTO</span>
+
+            <h2>
+                CALCULADORA DE
+                <b>VOLUMEN</b>
+            </h2>
+
+            <p>
+                Selecciona una figura, introduce sus medidas
+                y libera tu poder matemático.
+            </p>
+
+        </div>
+
+
+        <div class="calculator-layout">
+
+
+            <!-- SELECTOR -->
+
+            <aside class="calculator-menu">
+
+                <button class="shape-btn active" data-shape="cubo">
+                    🧊 Cubo
+                </button>
+
+                <button class="shape-btn" data-shape="piramide">
+                    🔺 Pirámide
+                </button>
+
+                <button class="shape-btn" data-shape="esfera">
+                    🔵 Esfera
+                </button>
+
+                <button class="shape-btn" data-shape="cono">
+                    🔻 Cono
+                </button>
+
+            </aside>
+
+
+            <!-- CALCULADORA -->
+
+            <div class="calculator-panel">
+
+                <div class="calculator-top">
+
+                    <div>
+
+                        <span id="calcNumber">01</span>
+
+                        <h3 id="calcTitle">
+                            Volumen del Cubo
+                        </h3>
+
+                    </div>
+
+                    <div class="formula-display" id="calcFormula">
+                        V = lado³
+                    </div>
+
+                </div>
+
+
+                <!-- CAMPOS DINÁMICOS -->
+
+                <div id="inputsArea"></div>
+
+
+                <div class="unit-area">
+
+                    <label>Unidad</label>
+
+                    <select id="unit">
+
+                        <option value="cm">Centímetros</option>
+                        <option value="m">Metros</option>
+                        <option value="mm">Milímetros</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="calculator-actions">
+
+                    <button id="calculateBtn">
+                        CALCULAR PODER ⚡
+                    </button>
+
+                    <button id="clearBtn" class="clear-btn">
+                        Limpiar
+                    </button>
+
+                </div>
+
+
+                <!-- RESULTADO -->
+
+                <div class="result-box">
+
+                    <span>RESULTADO</span>
+
+                    <strong id="result">
+                        0
+                    </strong>
+
+                    <small id="resultUnit">
+                        cm³
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- EXPLICACIÓN -->
+
+            <aside class="explanation">
+
+                <div class="character-mini">
+
+                    <img
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngmart.com%2Ffiles%2F12%2FPiccolo-PNG-Background-Image.png&f=1&nofb=1&ipt=55af75d4e8a3cfe9b214f87b215f2abd0d1d5ec91f09ce1794185fb520a31794"
+                        alt="Piccolo"
+                    >
+
+                </div>
+
+                <span>CONSEJO DEL MAESTRO</span>
+
+                <h3>
+                    Aprende la fórmula,
+                    no solo el resultado.
+                </h3>
+
+                <p id="formulaExplanation">
+                    El volumen de un cubo se obtiene
+                    multiplicando el lado tres veces.
+                </p>
+
+                <div class="tip">
+                    💡 Recuerda utilizar siempre
+                    las mismas unidades.
+                </div>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ENTRENAMIENTO
+    ====================================================== -->
+
+    <section class="training" id="entrenamiento">
+
+        <div class="training-content">
+
+            <span>SUBE DE NIVEL</span>
+
+            <h2>
+                ¿CUÁNTO PODER
+                <b>PUEDES ALCANZAR?</b>
+            </h2>
+
+            <p>
+                Cada cálculo correcto aumenta tu nivel.
+                Entrena con diferentes figuras y conviértete
+                en un maestro del volumen.
+            </p>
+
+            <div class="level">
+
+                <div class="level-info">
+                    <span>NIVEL SAIYAN</span>
+                    <strong id="levelText">1</strong>
+                </div>
+
+                <div class="level-bar">
+                    <i id="levelBar"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- GOHAN -->
+
+        <div class="training-character">
+
+            <div class="aura aura-purple"></div>
+
+            <!-- Imagen original de Gohan. NO MODIFICADA -->
+            <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F6d%2F30%2F4c%2F6d304c2fdb2426be77452ba6dd35a3f0.png&f=1&nofb=1&ipt=91b6348d6f7281bd1063c181ca111159506aaef8ac5a4d2e6898bfd679e23f67"
+                alt="Gohan"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         NIVELES
+    ====================================================== -->
+
+    <section class="levels">
+
+        <div class="section-title dark">
+
+            <span>CAMINO DEL GUERRERO</span>
+
+            <h2>
+                ELIGE TU <b>NIVEL</b>
+            </h2>
+
+        </div>
+
+
+        <div class="level-grid">
+
+            <article class="level-card">
+
+                <span>NIVEL 01</span>
+
+                <h3>Guerrero</h3>
+
+                <p>Domina los conceptos básicos.</p>
+
+                <ul>
+                    <li>✓ Cubo</li>
+                    <li>✓ Pirámide</li>
+                    <li>✓ Fórmulas básicas</li>
+                </ul>
+
+                <a href="#calculadora">
+                    Entrenar
+                </a>
+
+            </article>
+
+
+            <article class="level-card featured-level">
+
+                <div class="chosen">
+                    MÁS ELEGIDO
+                </div>
+
+                <span>NIVEL 02</span>
+
+                <h3>Super Saiyan</h3>
+
+                <p>Aumenta considerablemente tu poder.</p>
+
+                <ul>
+                    <li>✓ Todas las figuras</li>
+                    <li>✓ Calculadora 3D</li>
+                    <li>✓ Explicaciones</li>
+                </ul>
+
+                <a href="#calculadora">
+                    Entrenar ⚡
+                </a>
+
+            </article>
+
+
+            <article class="level-card">
+
+                <span>NIVEL 03</span>
+
+                <h3>Dios Saiyan</h3>
+
+                <p>Alcanza el máximo nivel matemático.</p>
+
+                <ul>
+                    <li>✓ Todas las fórmulas</li>
+                    <li>✓ Cálculos ilimitados</li>
+                    <li>✓ Dominio total</li>
+                </ul>
+
+                <a href="#calculadora">
+                    Máximo poder
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PERSONAJES
+         Se mantiene la estructura y las imágenes originales,
+         pero se agregan efectos visuales e información.
+    ====================================================== -->
+
+    <section class="characters">
+
+        <div class="character-energy-bg"></div>
+
+        <div class="section-title">
+
+            <span>⚡ MAESTROS DEL ENTRENAMIENTO ⚡</span>
+
+            <h2>
+                APRENDE JUNTO A
+                <b>LOS GUERREROS</b>
+            </h2>
+
+            <p class="warrior-intro">
+                Cada guerrero representa una forma diferente
+                de entrenar, aprender y aumentar tu poder.
+            </p>
+
+        </div>
+
+
+        <div class="character-row">
+
+            <!-- TRUNKS -->
+
+            <div class="character-card warrior-card">
+
+                <div class="warrior-aura"></div>
+
+                <img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F43%2Faa%2Ffd%2F43aafd095b8203ff56d43669c96e3be5.png&f=1&nofb=1&ipt=d4234e6e63f4ee0e070755aef294ce582c32f2f520fc91070b72243c9b6fe8d5"
+                    alt="Personaje Dragon Ball"
+                >
+
+                <div class="warrior-info">
+                    <span>GUERRERO</span>
+                    <h3>Trunks</h3>
+
+                    <p>
+                        Precisión, velocidad y disciplina
+                        para dominar cada cálculo.
+                    </p>
+
+                    <small>⚡ ENTRENAMIENTO +20</small>
+                </div>
+
+            </div>
+
+
+            <!-- TRUNKS SUPER SAIYAN -->
+
+            <div class="character-card warrior-card">
+
+                <div class="warrior-aura"></div>
+
+                <img
+                    src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Forig04.deviantart.net%2F031b%2Ff%2F2012%2F057%2Fd%2F4%2Frender_trunks_ssj_by_renderdragonball-d4r1ger.png&f=1&nofb=1&ipt=6682961b0b44aa7037c4d7c76b802eaaf2f33bcbdfab60111fda84ef889ffd06"
+                    alt="Trunks"
+                >
+
+                <div class="warrior-info">
+                    <span>SUPER SAIYAN</span>
+                    <h3>Trunks</h3>
+
+                    <p>
+                        Cuando el nivel aumenta,
+                        también aumenta el desafío.
+                    </p>
+
+                    <small>🔥 PODER +50</small>
+                </div>
+
+            </div>
+
+
+            <!-- SHENLONG -->
+
+            <div class="character-card warrior-card">
+
+                <div class="warrior-aura"></div>
+
+                <img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fth08.deviantart.net%2Ffs50%2FPRE%2Ff%2F2009%2F255%2F5%2Fb%2Fshenlong_vector_by_elfaceitoso.png&f=1&nofb=1&ipt=bbb7343515f2ce224d285fd18fe91a67a49114864ade7707f0f2cc1e06522ab5"
+                    alt="Shenlong"
+                >
+
+                <div class="warrior-info">
+                    <span>DRAGÓN</span>
+                    <h3>Shenlong</h3>
+
+                    <p>
+                        El conocimiento es el verdadero
+                        deseo que debes pedir.
+                    </p>
+
+                    <small>🐉 SABIDURÍA +100</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         DESAFÍO DEL GUERRERO Z
+         Esta sección reemplaza los antiguos tres comentarios.
+         Ahora el usuario puede interactuar con un minijuego
+         de preguntas sobre volumen.
+    ====================================================== -->
+
+    <section class="testimonials" id="opiniones">
+
+        <!-- Fondo energético -->
+        <div class="battle-bg">
+            <div class="battle-orb battle-orb-one"></div>
+            <div class="battle-orb battle-orb-two"></div>
+            <div class="battle-grid"></div>
+        </div>
+
+        <div class="section-title battle-title">
+
+            <span>🔥 PRUEBA FINAL DEL ENTRENAMIENTO 🔥</span>
+
+            <h2>
+                DESAFÍO DEL
+                <b>GUERRERO Z</b>
+            </h2>
+
+            <p>
+                Demuestra cuánto has aprendido sobre el volumen.
+                Responde correctamente y aumenta tu Ki.
+            </p>
+
+        </div>
+
+
+        <!-- PANEL DEL JUEGO -->
+
+        <div class="z-challenge">
+
+            <!-- Información del jugador -->
+
+            <div class="challenge-header">
+
+                <div class="fighter-name">
+                    <span>GUERRERO</span>
+                    <strong id="fighterName">SAIYAN</strong>
+                </div>
+
+                <div class="score-display">
+                    <span>PUNTOS</span>
+                    <strong id="gameScore">0</strong>
+                </div>
+
+                <div class="streak-display">
+                    <span>RACHA</span>
+                    <strong id="gameStreak">0 🔥</strong>
+                </div>
+
+            </div>
+
+
+            <!-- Barra de Ki -->
+
+            <div class="ki-section">
+
+                <div class="ki-label">
+                    <span>KI</span>
+                    <strong id="kiText">0%</strong>
+                </div>
+
+                <div class="ki-bar">
+                    <i id="kiBar"></i>
+                </div>
+
+            </div>
+
+
+            <!-- Pregunta -->
+
+            <div class="question-box">
+
+                <div class="question-number">
+                    DESAFÍO <span id="questionNumber">01</span>
+                </div>
+
+                <h3 id="questionText">
+                    ¿Cuál es el volumen de un cubo
+                    cuyo lado mide 5 cm?
+                </h3>
+
+            </div>
+
+
+            <!-- OPCIONES -->
+
+            <div class="answer-grid" id="answerGrid">
+
+                <button class="answer-btn" data-answer="100">
+                    100 cm³
+                </button>
+
+                <button class="answer-btn" data-answer="125">
+                    125 cm³
+                </button>
+
+                <button class="answer-btn" data-answer="25">
+                    25 cm³
+                </button>
+
+                <button class="answer-btn" data-answer="150">
+                    150 cm³
+                </button>
+
+            </div>
+
+
+            <!-- MENSAJE DEL JUEGO -->
+
+            <div class="battle-message" id="battleMessage">
+                ⚡ ¡Demuestra tu poder matemático!
+            </div>
+
+
+            <!-- BOTÓN SIGUIENTE -->
+
+            <button class="next-question" id="nextQuestion" style="display:none;">
+                SIGUIENTE DESAFÍO ⚡
+            </button>
+
+
+            <!-- RESULTADO FINAL -->
+
+            <div class="final-result" id="finalResult">
+
+                <div class="final-icon">
+                    🐉
+                </div>
+
+                <h3 id="finalTitle">
+                    ¡ENTRENAMIENTO COMPLETADO!
+                </h3>
+
+                <p id="finalText">
+                    Has demostrado tu poder.
+                </p>
+
+                <strong id="finalScore">
+                    0 PUNTOS
+                </strong>
+
+                <button id="restartGame">
+                    ENTRENAR DE NUEVO 🔥
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <h2>
+            🟠 DRAGON <b>VOLUME</b> 🐉
+        </h2>
+
+        <p>
+            Aprende. Calcula. Entrena.
+            Aumenta tu poder matemático.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#figuras">Figuras</a>
+            <a href="#calculadora">Calculadora</a>
+            <a href="#entrenamiento">Entrenamiento</a>
+            <a href="#opiniones">Desafío</a>
+
+        </div>
+
+        <small>
+            © 2026 Dragon Volume · Proyecto académico
+        </small>
+
+    </footer>
+
+
+    <!-- JavaScript principal del proyecto -->
+    <script src="script.js"></script>
+
+</body>
+</html>
